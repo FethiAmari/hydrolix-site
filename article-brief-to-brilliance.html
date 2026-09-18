@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Brief to Brilliance | Hydrolix</title>
+  <meta name="description" content="A behind-the-scenes look at our creative process, step by step.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .article-hero { position: relative; height: 55vh; min-height: 350px; overflow: hidden; }
+    .article-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+    .article-hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,1) 0%, rgba(10,10,10,0.4) 50%, rgba(10,10,10,0.2) 100%); }
+    .article-hero-content { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: clamp(2rem, 5vw, 4rem); }
+    .article-hero .container { width: 100%; }
+    .article-hero-tag { display: inline-block; padding: 0.375rem 0.875rem; background: var(--accent); color: var(--bg); font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; border-radius: 100px; margin-bottom: 1.25rem; }
+    .article-hero-title { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 500; line-height: 1.15; max-width: 800px; margin-bottom: 1rem; }
+    .article-hero-meta { display: flex; align-items: center; gap: 1rem; color: var(--text-muted); font-size: 0.875rem; }
+    .article-body-page { padding: clamp(3rem, 6vw, 5rem) 0 clamp(5rem, 10vw, 8rem); }
+    .article-body-content { max-width: 720px; }
+    .article-body-content p { color: var(--text-secondary); line-height: 1.85; margin-bottom: 1.5rem; font-size: 1.0625rem; }
+    .article-body-content h2 { font-family: var(--font-display); font-size: 1.625rem; font-weight: 500; margin: 3rem 0 1.25rem; color: var(--text); }
+    .article-body-content blockquote { border-left: 2px solid var(--accent); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; }
+    .article-body-content blockquote p { color: var(--text); font-family: var(--font-display); font-size: 1.25rem; line-height: 1.6; }
+    .article-body-content ul { color: var(--text-secondary); margin: 0.5rem 0 1.5rem 1.5rem; list-style: disc; }
+    .article-body-content li { margin-bottom: 0.5rem; line-height: 1.7; }
+    .article-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 3rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+    .article-nav a { font-size: 0.875rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem; transition: gap 0.3s var(--ease); }
+    .article-nav a:hover { gap: 0.75rem; }
+    @media (max-width: 768px) {
+      .article-hero { height: 45vh; min-height: 280px; }
+      .article-hero-title { font-size: clamp(1.75rem, 6vw, 2.5rem); }
+      .article-hero-meta { flex-wrap: wrap; gap: 0.5rem; }
+      .article-body-page { padding: clamp(2rem, 5vw, 3rem) 0 clamp(3rem, 8vw, 5rem); }
+      .article-body-content p { font-size: 1rem; }
+      .article-nav { flex-direction: column; gap: 1rem; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+        <span class="logo-text">Hydrolix</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-backdrop" id="navBackdrop"></div>
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="index.html#about" role="menuitem" class="nav-link">About</a></li>
+        <li role="none"><a href="index.html#services" role="menuitem" class="nav-link">Services</a></li>
+        <li role="none"><a href="index.html#work" role="menuitem" class="nav-link">Work</a></li>
+        <li role="none"><a href="index.html#articles" role="menuitem" class="nav-link">Journal</a></li>
+        <li role="none"><a href="index.html#contact" role="menuitem" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="article-hero">
+      <div class="article-hero-bg" style="background-image: url('images/article-process.jpg');"></div>
+      <div class="article-hero-content">
+        <div class="container">
+          <span class="article-hero-tag">Process</span>
+          <h1 class="article-hero-title">From Brief to Brilliance</h1>
+          <div class="article-hero-meta">
+            <span>July 10, 2026</span>
+            <span>&middot;</span>
+            <span>7 min read</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="article-body-page">
+      <div class="container">
+        <div class="article-body-content">
+          <p>Every great design starts with a conversation. Not a moodboard, not a wireframe, not a pixel — a conversation. At Hydrolix, we've refined our creative process over years of collaboration with brands across industries. Here's what actually happens between the first handshake and the final deliverable.</p>
+
+          <h2>Phase 1: Discovery</h2>
+          <p>Before we sketch a single line, we listen. Discovery is about understanding the business, the audience, the competitive landscape, and the aspirations behind the project. We ask questions that go beyond the surface: What does success look like in six months? What problem are you really trying to solve? Who are you trying to reach, and what matters to them?</p>
+          <p>This phase produces our creative brief — a document that becomes the North Star for every design decision that follows. A well-crafted brief doesn't constrain creativity; it focuses it.</p>
+
+          <h2>Phase 2: Research & Strategy</h2>
+          <p>With the brief in hand, we dive deep. We analyze competitors, study audience behavior, audit existing touchpoints, and identify opportunities. Strategy isn't separate from creativity — it's the foundation that makes creativity meaningful.</p>
+          <p>We map out positioning, messaging hierarchies, and visual territories. This research phase ensures that every design choice is grounded in insight, not assumption.</p>
+
+          <h2>Phase 3: Concept Development</h2>
+          <p>This is where imagination takes over. We develop multiple conceptual directions — typically 2-3 distinct approaches — each exploring a different interpretation of the brief. Concepts aren't polished designs; they're ideas expressed visually, showing the strategic thinking behind the aesthetic direction.</p>
+          <p>We present these concepts to clients not as finished work, but as conversation starters. The goal is to provoke reaction, spark discussion, and find the direction that resonates most deeply.</p>
+
+          <blockquote>
+            <p>"The creative process is not about perfection. It's about exploration, iteration, and the courage to pursue the unexpected."</p>
+          </blockquote>
+
+          <h2>Phase 4: Refinement</h2>
+          <p>Once a direction is chosen, refinement begins. This is the most intensive phase — where broad concepts become precise design solutions. We iterate on typography, color, spacing, hierarchy, and every micro-interaction that shapes the user experience.</p>
+          <p>Refinement is collaborative. We share work frequently, gather feedback, and iterate quickly. The best solutions emerge from this back-and-forth, where client insight meets design expertise.</p>
+
+          <h2>Phase 5: Delivery</h2>
+          <p>The final phase is about precision and completeness. We prepare production-ready files, create comprehensive brand guidelines, and ensure every deliverable meets the highest standards of craft. We don't just hand over files — we ensure the client's team can use them effectively.</p>
+          <p>We also conduct a thorough review session, walking the client through every element of the work and explaining the reasoning behind each decision. Understanding the "why" is as important as seeing the "what."</p>
+
+          <h2>The Thread That Connects Everything</h2>
+          <p>Our process isn't rigid — it adapts to the scope and needs of each project. But one principle remains constant: every phase serves the final outcome. Research informs concepts. Concepts drive refinement. Refinement leads to delivery. And delivery creates impact.</p>
+          <p>Great design isn't magic. It's methodology, mastery, and a relentless commitment to getting it right.</p>
+
+          <div class="article-nav">
+            <a href="article-color-psychology.html">&larr; Previous Article</a>
+            <a href="article-typography-brand-voice.html">Next Article &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+            <span class="logo-text">Hydrolix</span>
+          </a>
+          <p class="footer-tagline">Art & Design Studio</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h3 class="footer-heading">Studio</h3>
+            <ul>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#articles">Journal</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Connect</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Dribbble</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Legal</h3>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="#">LLC Registration</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hydrolix LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

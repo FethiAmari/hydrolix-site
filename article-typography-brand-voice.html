@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography as Brand Voice | Hydrolix</title>
+  <meta name="description" content="Your typeface speaks before your words do. Choose it with intention.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .article-hero { position: relative; height: 55vh; min-height: 350px; overflow: hidden; }
+    .article-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+    .article-hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,1) 0%, rgba(10,10,10,0.4) 50%, rgba(10,10,10,0.2) 100%); }
+    .article-hero-content { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: clamp(2rem, 5vw, 4rem); }
+    .article-hero .container { width: 100%; }
+    .article-hero-tag { display: inline-block; padding: 0.375rem 0.875rem; background: var(--accent); color: var(--bg); font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; border-radius: 100px; margin-bottom: 1.25rem; }
+    .article-hero-title { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 500; line-height: 1.15; max-width: 800px; margin-bottom: 1rem; }
+    .article-hero-meta { display: flex; align-items: center; gap: 1rem; color: var(--text-muted); font-size: 0.875rem; }
+    .article-body-page { padding: clamp(3rem, 6vw, 5rem) 0 clamp(5rem, 10vw, 8rem); }
+    .article-body-content { max-width: 720px; }
+    .article-body-content p { color: var(--text-secondary); line-height: 1.85; margin-bottom: 1.5rem; font-size: 1.0625rem; }
+    .article-body-content h2 { font-family: var(--font-display); font-size: 1.625rem; font-weight: 500; margin: 3rem 0 1.25rem; color: var(--text); }
+    .article-body-content blockquote { border-left: 2px solid var(--accent); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; }
+    .article-body-content blockquote p { color: var(--text); font-family: var(--font-display); font-size: 1.25rem; line-height: 1.6; }
+    .article-body-content ul { color: var(--text-secondary); margin: 0.5rem 0 1.5rem 1.5rem; list-style: disc; }
+    .article-body-content li { margin-bottom: 0.5rem; line-height: 1.7; }
+    .article-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 3rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+    .article-nav a { font-size: 0.875rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem; transition: gap 0.3s var(--ease); }
+    .article-nav a:hover { gap: 0.75rem; }
+    @media (max-width: 768px) {
+      .article-hero { height: 45vh; min-height: 280px; }
+      .article-hero-title { font-size: clamp(1.75rem, 6vw, 2.5rem); }
+      .article-hero-meta { flex-wrap: wrap; gap: 0.5rem; }
+      .article-body-page { padding: clamp(2rem, 5vw, 3rem) 0 clamp(3rem, 8vw, 5rem); }
+      .article-body-content p { font-size: 1rem; }
+      .article-nav { flex-direction: column; gap: 1rem; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+        <span class="logo-text">Hydrolix</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-backdrop" id="navBackdrop"></div>
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="index.html#about" role="menuitem" class="nav-link">About</a></li>
+        <li role="none"><a href="index.html#services" role="menuitem" class="nav-link">Services</a></li>
+        <li role="none"><a href="index.html#work" role="menuitem" class="nav-link">Work</a></li>
+        <li role="none"><a href="index.html#articles" role="menuitem" class="nav-link">Journal</a></li>
+        <li role="none"><a href="index.html#contact" role="menuitem" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="article-hero">
+      <div class="article-hero-bg" style="background-image: url('images/article-typography.jpg');"></div>
+      <div class="article-hero-content">
+        <div class="container">
+          <span class="article-hero-tag">Typography</span>
+          <h1 class="article-hero-title">Typography as Brand Voice</h1>
+          <div class="article-hero-meta">
+            <span>June 22, 2026</span>
+            <span>&middot;</span>
+            <span>5 min read</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="article-body-page">
+      <div class="container">
+        <div class="article-body-content">
+          <p>Before a single word is read, typography has already spoken. The weight of a headline, the rhythm of a paragraph, the personality of a typeface — these elements communicate tone, values, and identity before the reader processes a single syllable. Typography is your brand's silent voice.</p>
+
+          <h2>Why Typography Matters</h2>
+          <p>Typography accounts for roughly 90% of web design. It's the primary vehicle for delivering your message, and it shapes how that message is received. A serif typeface communicates tradition and authority. A geometric sans-serif signals modernity and precision. A handwritten script suggests warmth and personality.</p>
+          <p>These aren't arbitrary associations — they're deeply rooted in cultural context and visual history. Choosing a typeface is choosing a voice. And like any voice, it needs to be appropriate for the message and the audience.</p>
+
+          <h2>The Elements of Typographic Voice</h2>
+          <p><strong>Typeface selection:</strong> The foundation of your typographic identity. A typeface carries personality in its curves, terminals, and proportions. Choose one that aligns with your brand's character — not just what looks trendy, but what resonates with your audience.</p>
+          <p><strong>Weight and style:</strong> Bold, regular, light — each weight creates a different emphasis and mood. A bold headline commands attention; a light body text feels airy and approachable. Using weight strategically creates visual hierarchy without relying on color or size alone.</p>
+          <p><strong>Scale and proportion:</strong> Size relationships between headings, subheadings, and body text create rhythm and guide the reader through your content. A well-defined type scale ensures consistency across all touchpoints.</p>
+          <p><strong>Spacing and alignment:</strong> Letter-spacing, line-height, and paragraph spacing affect readability and mood. Tight spacing feels urgent and dense; generous spacing feels calm and luxurious. These micro-decisions have macro impact.</p>
+
+          <blockquote>
+            <p>"Type is a beautiful group of letters, not a group of beautiful letters." — Matthew Carter</p>
+          </blockquote>
+
+          <h2>Pairing Typefaces</h2>
+          <p>Most brands use two typefaces: one for headlines (display) and one for body text (text). The key to successful pairing is contrast with cohesion. A serif headline with a sans-serif body is a classic combination because the contrast creates visual interest while both fonts maintain readability at their respective sizes.</p>
+          <p>Avoid pairing typefaces from the same classification (two serifs, two geometric sans-serifs) unless they differ significantly in weight or proportion. The goal is distinction, not competition.</p>
+
+          <h2>Common Typography Mistakes</h2>
+          <ul>
+            <li><strong>Using too many typefaces:</strong> More than 2-3 creates visual chaos. Discipline is key.</li>
+            <li><strong>Ignoring readability:</strong> A beautiful typeface that's hard to read fails at its primary job.</li>
+            <li><strong>Trend-chasing:</strong> Today's trendy font is tomorrow's cliché. Choose timelessness over trendiness.</li>
+            <li><strong>Inconsistent application:</strong> Inconsistent type sizes, weights, and spacing erode brand coherence.</li>
+            <li><strong>Neglecting web fonts:</strong> Web typography requires optimization for screen rendering, loading performance, and cross-device consistency.</li>
+          </ul>
+
+          <h2>Typography Across Touchpoints</h2>
+          <p>Your typographic system needs to work everywhere — from business cards to billboards, from mobile screens to printed brochures. Test your type at every scale and context. A typeface that looks stunning at 72pt may be illegible at 12pt. Ensure your system is flexible enough to maintain personality across all applications.</p>
+
+          <h2>The Final Word</h2>
+          <p>Typography isn't decoration — it's the architecture of communication. When chosen and applied with intention, it doesn't just support your message; it amplifies it. Your typeface speaks before your words do. Make sure it's saying the right thing.</p>
+
+          <div class="article-nav">
+            <a href="article-brief-to-brilliance.html">&larr; Previous Article</a>
+            <a href="article-ai-future.html">Next Article &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+            <span class="logo-text">Hydrolix</span>
+          </a>
+          <p class="footer-tagline">Art & Design Studio</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h3 class="footer-heading">Studio</h3>
+            <ul>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#articles">Journal</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Connect</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Dribbble</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Legal</h3>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="#">LLC Registration</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hydrolix LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

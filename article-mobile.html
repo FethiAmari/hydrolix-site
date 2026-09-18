@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empowering Mobility: Custom Mobile App Development for Industrial Assets | Hydrolix</title>
+  <meta name="description" content="Native and cross-platform mobile solutions that put industrial control and monitoring in the palm of your hand.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-text">Hydrolix</span>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+        <span class="logo-text">Hydrolix</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"><span></span><span></span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="index.html#about" role="menuitem" class="nav-link">About</a></li>
+        <li role="none"><a href="index.html#services" role="menuitem" class="nav-link">Services</a></li>
+        <li role="none"><a href="index.html#articles" role="menuitem" class="nav-link">Journal</a></li>
+        <li role="none"><a href="index.html#contact" role="menuitem" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- Article Hero -->
+    <section class="article-hero">
+      <div class="hero-bg">
+        <div class="hero-gradient"></div>
+        <div class="hero-noise"></div>
+      </div>
+      <div class="hero-content">
+        <a href="index.html#articles" class="article-back-link" data-reveal>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Journal
+        </a>
+        <div class="article-tags" data-reveal>
+          <span class="article-tag">Mobile</span>
+          <span class="article-tag">Technology</span>
+        </div>
+        <h1 class="article-hero-title" data-reveal>Empowering Mobility: Custom Mobile App Development for Industrial Assets</h1>
+        <div class="article-meta" data-reveal>
+          <time datetime="2026-07-01">July 1, 2026</time>
+          <span class="meta-separator">&middot;</span>
+          <span>10 min read</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Body -->
+    <article class="article-body">
+      <div class="container container-narrow">
+        <p class="article-lead">Industrial operations are increasingly mobile. Field technicians need real-time access to equipment data, plant managers want dashboards on the go, and remote monitoring demands constant connectivity between assets in the field and control rooms in the office. Custom mobile applications designed specifically for industrial contexts bridge the gap between operational technology and information technology, putting actionable insights in the hands of the people who need them most.</p>
+
+        <h2>Native vs. Cross-Platform Development</h2>
+        <p>The first strategic decision in any mobile project is choosing between native and cross-platform development. Native apps, built separately for iOS and Android using their respective languages (Swift/Kotlin), deliver maximum performance and platform-specific feature access. Cross-platform frameworks, by contrast, allow a single codebase to target both platforms simultaneously.</p>
+        <ul>
+          <li><strong>Native development:</strong> Offers the best performance, deepest platform integration, and access to the latest APIs. The cost is maintaining two separate codebases, which doubles development and maintenance effort.</li>
+          <li><strong>React Native:</strong> Facebook's cross-platform framework renders native components using JavaScript, providing near-native performance with a single codebase. Its large ecosystem and hot-reload development cycle make it a popular choice for enterprise applications.</li>
+          <li><strong>Flutter:</strong> Google's UI toolkit compiles to native ARM code and renders using its own engine, delivering consistent performance across platforms. Its widget-based architecture and expressive UI capabilities make it ideal for applications with complex visual requirements.</li>
+          <li><strong>Progressive Web Apps (PWAs):</strong> Browser-based applications that install on the home screen, work offline, and access device features through web APIs. PWAs eliminate app store distribution challenges but have limited access to some native capabilities.</li>
+        </ul>
+
+        <h2>Industrial IoT and Remote Monitoring</h2>
+        <p>The intersection of mobile development and industrial IoT (IIoT) creates powerful opportunities for operational efficiency. Mobile applications serve as the human interface to IoT ecosystems, translating raw sensor data into actionable information through intuitive dashboards, alert systems, and control interfaces.</p>
+        <p>Effective industrial mobile apps integrate with IoT platforms through MQTT, OPC-UA, or REST APIs, receiving telemetry data from sensors monitoring temperature, pressure, vibration, flow rate, and other critical parameters. The app layer processes this data, applies threshold-based alerting, and presents trends that help operators identify issues before they escalate into failures.</p>
+        <p>Key capabilities for industrial mobile applications include:</p>
+        <ul>
+          <li><strong>Real-time dashboards:</strong> Live-updating displays of asset health indicators, production metrics, and environmental conditions, with customizable layouts for different user roles.</li>
+          <li><strong>Push notifications:</strong> Immediate alerts for alarm conditions, maintenance reminders, and threshold breaches, ensuring that critical events receive timely attention regardless of the user's location.</li>
+          <li><strong>Offline capability:</strong> Data caching and local storage enable field technicians to access equipment history, work orders, and documentation even in areas with poor connectivity.</li>
+          <li><strong>Barcode and QR code scanning:</strong> Rapid asset identification by scanning equipment tags, pulling up maintenance history, specifications, and current status instantly.</li>
+          <li><strong>Work order management:</strong> Digital work order creation, assignment, tracking, and completion that replaces paper-based systems with auditable, real-time workflows.</li>
+        </ul>
+
+        <h2>Security Considerations</h2>
+        <p>Industrial mobile applications handle sensitive operational data and, in some cases, provide control interfaces to physical equipment. Security cannot be an afterthought; it must be architected into the application from the earliest design phase.</p>
+        <p>Authentication should leverage biometric capabilities where available, with multi-factor authentication required for sensitive operations. Data encryption must protect information both in transit (TLS 1.3) and at rest (AES-256). Certificate pinning prevents man-in-the-middle attacks that could intercept credentials or operational commands.</p>
+        <p>Mobile device management (MDM) integration ensures that applications run only on authorized, managed devices. Remote wipe capabilities protect data if a device is lost or stolen. Application-level sandboxing prevents data leakage between corporate and personal applications on the same device.</p>
+
+        <h2>User Experience for Industrial Contexts</h2>
+        <p>Designing mobile interfaces for industrial environments differs fundamentally from consumer app design. Users often operate in challenging conditions: wearing gloves, working in bright sunlight or dimly lit areas, standing instead of sitting, and multitasking with physical tasks. These constraints demand deliberate UX decisions.</p>
+        <p>Touch targets must be larger than standard guidelines suggest, with generous spacing to prevent accidental activation. High-contrast color schemes improve readability in varied lighting conditions. Voice input and output capabilities enable hands-free interaction when manual operation is impractical or unsafe.</p>
+        <p>Information architecture should prioritize the most critical data on the primary screen, with progressive disclosure for detailed information. Industrial users need to assess status at a glance, not navigate complex menu hierarchies. Clear, unambiguous iconography and minimal text reduce cognitive load in high-stress situations.</p>
+
+        <h2>Performance and Reliability</h2>
+        <p>Industrial environments often feature unreliable network connectivity, making performance optimization and offline capability essential. Applications must be designed to function gracefully under degraded network conditions, queuing data for transmission when connectivity is restored and providing clear indicators of data freshness.</p>
+        <p>Local data storage strategies, including SQLite databases and encrypted key-value stores, enable offline access to recently synced data. Background synchronization services ensure that data captured offline is uploaded promptly when connectivity returns, maintaining data integrity across the mobile and server layers.</p>
+
+        <h2>Conclusion</h2>
+        <p>Custom mobile application development for industrial assets requires a unique blend of technical capability, domain understanding, and user-centered design. By selecting appropriate development frameworks, integrating securely with IoT infrastructure, and designing for the realities of industrial environments, organizations can empower their workforce with mobile tools that drive efficiency, improve safety, and deliver measurable operational value.</p>
+
+        <a href="index.html#articles" class="article-back-bottom">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Journal
+        </a>
+      </div>
+    </article>
+
+    <!-- Related Articles -->
+    <section class="related-articles">
+      <div class="container">
+        <h2 class="section-title">Related Articles</h2>
+        <div class="articles-grid">
+          <article class="article-card" data-reveal>
+            <div class="article-image" style="background-image: url('images/article-web.jpg'); background-size: cover; background-position: center;">
+              <span class="article-tag">Web Dev</span>
+            </div>
+            <div class="article-body">
+              <time class="article-date" datetime="2026-07-18">July 18, 2026</time>
+              <h3 class="article-title">Engineering the Digital Frontier: Enterprise Website Development</h3>
+              <p class="article-excerpt">Building modern, scalable web platforms with clean architecture, optimized performance, and stunning design.</p>
+              <a href="article-web.html" class="article-link">Read Article <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+          <article class="article-card" data-reveal>
+            <div class="article-image" style="background-image: url('images/article-3d.jpg'); background-size: cover; background-position: center;">
+              <span class="article-tag">3D Modeling</span>
+            </div>
+            <div class="article-body">
+              <time class="article-date" datetime="2026-08-05">August 5, 2026</time>
+              <h3 class="article-title">Visualizing Complexity with 3D Engineering Modeling and Digital Twins</h3>
+              <p class="article-excerpt">Advanced 3D CAD models and digital twin technology for product visualization, simulation, and prototyping.</p>
+              <a href="article-3d-modeling.html" class="article-link">Read Article <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+            <span class="logo-text">Hydrolix</span>
+          </a>
+          <p class="footer-tagline">Engineering & Digital Solutions</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h3 class="footer-heading">Studio</h3>
+            <ul>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#articles">Journal</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Connect</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Dribbble</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Legal</h3>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="#">LLC Registration</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hydrolix LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

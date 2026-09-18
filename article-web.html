@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering the Digital Frontier: Enterprise Website Development | Hydrolix</title>
+  <meta name="description" content="Building modern, scalable web platforms with clean architecture, optimized performance, and stunning design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-text">Hydrolix</span>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+        <span class="logo-text">Hydrolix</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"><span></span><span></span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="index.html#about" role="menuitem" class="nav-link">About</a></li>
+        <li role="none"><a href="index.html#services" role="menuitem" class="nav-link">Services</a></li>
+        <li role="none"><a href="index.html#articles" role="menuitem" class="nav-link">Journal</a></li>
+        <li role="none"><a href="index.html#contact" role="menuitem" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- Article Hero -->
+    <section class="article-hero">
+      <div class="hero-bg">
+        <div class="hero-gradient"></div>
+        <div class="hero-noise"></div>
+      </div>
+      <div class="hero-content">
+        <a href="index.html#articles" class="article-back-link" data-reveal>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Journal
+        </a>
+        <div class="article-tags" data-reveal>
+          <span class="article-tag">Web Development</span>
+          <span class="article-tag">Digital</span>
+        </div>
+        <h1 class="article-hero-title" data-reveal>Engineering the Digital Frontier: Enterprise Website Development</h1>
+        <div class="article-meta" data-reveal>
+          <time datetime="2026-07-18">July 18, 2026</time>
+          <span class="meta-separator">&middot;</span>
+          <span>11 min read</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Body -->
+    <article class="article-body">
+      <div class="container container-narrow">
+        <p class="article-lead">Enterprise websites are no longer digital brochures; they are mission-critical platforms that drive revenue, support customers, and represent brand identity across every touchpoint. Building a website that meets enterprise standards requires the same rigor, planning, and attention to detail that goes into engineering a physical product. From architecture and performance to accessibility and security, every decision must be deliberate and informed.</p>
+
+        <h2>Choosing the Right Technology Stack</h2>
+        <p>The foundation of any successful web project is the technology stack. Modern enterprise development offers a spectrum of approaches, each with distinct trade-offs in terms of performance, developer experience, scalability, and maintainability.</p>
+        <p>JavaScript frameworks dominate the landscape, with React, Vue, and Angular leading adoption. React's component-based architecture, massive ecosystem, and virtual DOM performance make it a default choice for complex applications. Vue offers a gentler learning curve with comparable capabilities, while Angular provides a comprehensive, opinionated framework suited to large teams with established conventions.</p>
+        <ul>
+          <li><strong>React with Next.js:</strong> Server-side rendering, static generation, and API routes in a single framework. Ideal for content-heavy sites that demand fast initial loads and strong SEO.</li>
+          <li><strong>Vue with Nuxt:</strong> Convention-over-configuration approach with excellent documentation and a supportive community. Suited to teams transitioning from jQuery or simpler frameworks.</li>
+          <li><strong>Angular with Angular Universal:</strong> Full-featured framework with dependency injection, RxJS reactive patterns, and comprehensive tooling. Preferred by enterprises with large development teams and complex state management needs.</li>
+          <li><strong>Headless CMS architectures:</strong> Decoupling the content management layer from the presentation layer using platforms like Strapi, Contentful, or Sanity, paired with any frontend framework.</li>
+        </ul>
+
+        <h2>Responsive Design and Mobile-First Strategy</h2>
+        <p>Responsive design is no longer optional; it is the baseline expectation. With mobile traffic accounting for over 60% of global web visits, designing for smaller screens first forces prioritization of content and functionality. Progressive enhancement ensures that the experience improves as screen size and device capabilities increase.</p>
+        <p>CSS Grid and Flexbox have eliminated the need for complex float-based layouts and third-party grid systems. Container queries, now supported in all major browsers, enable component-level responsiveness that was previously impossible. These native capabilities reduce JavaScript overhead and improve rendering performance.</p>
+        <p>Key responsive design principles include:</p>
+        <ul>
+          <li><strong>Fluid typography:</strong> Using clamp() and viewport units to scale text proportionally between defined minimum and maximum sizes, eliminating breakpoint-based jumps.</li>
+          <li><strong>Responsive images:</strong> The picture element and srcset attribute serve appropriately sized images based on viewport width and device pixel ratio, reducing bandwidth waste.</li>
+          <li><strong>Touch-friendly targets:</strong> Ensuring interactive elements meet minimum size requirements and provide adequate spacing to prevent accidental activation on touch devices.</li>
+          <li><strong>Layout stability:</strong> Defining explicit dimensions for images and embeds to prevent cumulative layout shift (CLS), which degrades user experience and hurts search rankings.</li>
+        </ul>
+
+        <h2>Performance Optimization</h2>
+        <p>Website performance directly impacts user satisfaction, conversion rates, and search engine rankings. Google's Core Web Vitals metrics — Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS) — provide measurable targets that engineering teams should optimize against.</p>
+        <p>Optimization strategies span the entire request lifecycle:</p>
+        <ul>
+          <li><strong>Code splitting:</strong> Delivering only the JavaScript and CSS needed for the current page reduces initial load times. Dynamic imports and route-based splitting are standard practices in modern frameworks.</li>
+          <li><strong>Asset optimization:</strong> Image compression, WebP and AVIF format adoption, CSS minification, and JavaScript tree-shaking eliminate unnecessary bytes from the transfer.</li>
+          <li><strong>Caching strategies:</strong> Service workers enable offline-first experiences and intelligent caching. CDN edge caching reduces latency by serving content from geographically distributed nodes.</li>
+          <li><strong>Server-side rendering:</strong> Pre-rendering pages on the server eliminates the blank-screen delay that plagues purely client-side applications, improving perceived performance and SEO crawlability.</li>
+        </ul>
+
+        <h2>Accessibility as a Design Principle</h2>
+        <p>Web accessibility is both a legal requirement and a moral imperative. The Web Content Accessibility Guidelines (WCAG) 2.2 define criteria that ensure content is perceivable, operable, understandable, and robust for all users, including those with visual, auditory, motor, or cognitive disabilities.</p>
+        <p>Implementing accessibility is not a final-stage checklist; it must be integrated from the initial design phase through development and into ongoing maintenance. Semantic HTML provides the foundation, with ARIA attributes supplementing native semantics when necessary. Automated testing tools catch obvious violations, but manual testing with screen readers and keyboard navigation is essential for verifying real-world usability.</p>
+
+        <h2>Security and Compliance</h2>
+        <p>Enterprise websites handle sensitive data, process payments, and integrate with third-party services, creating a broad attack surface that requires proactive defense. Security must be addressed at every layer of the stack.</p>
+        <ul>
+          <li><strong>Content Security Policy (CSP):</strong> Restricting which resources can load and execute prevents cross-site scripting (XSS) and data injection attacks.</li>
+          <li><strong>HTTPS everywhere:</strong> TLS encryption protects data in transit and is a prerequisite for modern browser features like service workers and HTTP/2.</li>
+          <li><strong>Input validation:</strong> Server-side validation and sanitization of all user inputs prevent injection attacks regardless of client-side protections.</li>
+          <li><strong>Dependency auditing:</strong> Regular scanning of npm packages and third-party libraries for known vulnerabilities prevents supply-chain attacks.</li>
+          <li><strong>GDPR and CCPA compliance:</strong> Cookie consent management, data retention policies, and privacy-first analytics implementations ensure regulatory compliance.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>Enterprise website development demands a holistic approach that balances user experience, performance, accessibility, security, and maintainability. By selecting appropriate technology stacks, embracing responsive and performance-first design principles, and integrating security and accessibility from the start, engineering teams can build digital platforms that serve their organizations reliably for years to come.</p>
+
+        <a href="index.html#articles" class="article-back-bottom">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Journal
+        </a>
+      </div>
+    </article>
+
+    <!-- Related Articles -->
+    <section class="related-articles">
+      <div class="container">
+        <h2 class="section-title">Related Articles</h2>
+        <div class="articles-grid">
+          <article class="article-card" data-reveal>
+            <div class="article-image" style="background-image: url('images/article-mobile.jpg'); background-size: cover; background-position: center;">
+              <span class="article-tag">Mobile</span>
+            </div>
+            <div class="article-body">
+              <time class="article-date" datetime="2026-07-01">July 1, 2026</time>
+              <h3 class="article-title">Empowering Mobility: Custom Mobile App Development for Industrial Assets</h3>
+              <p class="article-excerpt">Native and cross-platform mobile solutions that put industrial control and monitoring in the palm of your hand.</p>
+              <a href="article-mobile.html" class="article-link">Read Article <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+          <article class="article-card" data-reveal>
+            <div class="article-image" style="background-image: url('images/article-3d.jpg'); background-size: cover; background-position: center;">
+              <span class="article-tag">3D Modeling</span>
+            </div>
+            <div class="article-body">
+              <time class="article-date" datetime="2026-08-05">August 5, 2026</time>
+              <h3 class="article-title">Visualizing Complexity with 3D Engineering Modeling and Digital Twins</h3>
+              <p class="article-excerpt">Advanced 3D CAD models and digital twin technology for product visualization, simulation, and prototyping.</p>
+              <a href="article-3d-modeling.html" class="article-link">Read Article <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+            <span class="logo-text">Hydrolix</span>
+          </a>
+          <p class="footer-tagline">Engineering & Digital Solutions</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h3 class="footer-heading">Studio</h3>
+            <ul>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#articles">Journal</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Connect</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Dribbble</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Legal</h3>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="#">LLC Registration</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hydrolix LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI and the Future of Creative Design | Hydrolix</title>
+  <meta name="description" content="How artificial intelligence is reshaping the workflow — and why human creativity remains irreplaceable.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .article-hero { position: relative; height: 55vh; min-height: 350px; overflow: hidden; }
+    .article-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+    .article-hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,1) 0%, rgba(10,10,10,0.4) 50%, rgba(10,10,10,0.2) 100%); }
+    .article-hero-content { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: clamp(2rem, 5vw, 4rem); }
+    .article-hero .container { width: 100%; }
+    .article-hero-tag { display: inline-block; padding: 0.375rem 0.875rem; background: var(--accent); color: var(--bg); font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; border-radius: 100px; margin-bottom: 1.25rem; }
+    .article-hero-title { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 500; line-height: 1.15; max-width: 800px; margin-bottom: 1rem; }
+    .article-hero-meta { display: flex; align-items: center; gap: 1rem; color: var(--text-muted); font-size: 0.875rem; }
+    .article-body-page { padding: clamp(3rem, 6vw, 5rem) 0 clamp(5rem, 10vw, 8rem); }
+    .article-body-content { max-width: 720px; }
+    .article-body-content p { color: var(--text-secondary); line-height: 1.85; margin-bottom: 1.5rem; font-size: 1.0625rem; }
+    .article-body-content h2 { font-family: var(--font-display); font-size: 1.625rem; font-weight: 500; margin: 3rem 0 1.25rem; color: var(--text); }
+    .article-body-content blockquote { border-left: 2px solid var(--accent); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; }
+    .article-body-content blockquote p { color: var(--text); font-family: var(--font-display); font-size: 1.25rem; line-height: 1.6; }
+    .article-body-content ul { color: var(--text-secondary); margin: 0.5rem 0 1.5rem 1.5rem; list-style: disc; }
+    .article-body-content li { margin-bottom: 0.5rem; line-height: 1.7; }
+    .article-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 3rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+    .article-nav a { font-size: 0.875rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem; transition: gap 0.3s var(--ease); }
+    .article-nav a:hover { gap: 0.75rem; }
+    @media (max-width: 768px) {
+      .article-hero { height: 45vh; min-height: 280px; }
+      .article-hero-title { font-size: clamp(1.75rem, 6vw, 2.5rem); }
+      .article-hero-meta { flex-wrap: wrap; gap: 0.5rem; }
+      .article-body-page { padding: clamp(2rem, 5vw, 3rem) 0 clamp(3rem, 8vw, 5rem); }
+      .article-body-content p { font-size: 1rem; }
+      .article-nav { flex-direction: column; gap: 1rem; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+        <span class="logo-text">Hydrolix</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-backdrop" id="navBackdrop"></div>
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="index.html#about" role="menuitem" class="nav-link">About</a></li>
+        <li role="none"><a href="index.html#services" role="menuitem" class="nav-link">Services</a></li>
+        <li role="none"><a href="index.html#work" role="menuitem" class="nav-link">Work</a></li>
+        <li role="none"><a href="index.html#articles" role="menuitem" class="nav-link">Journal</a></li>
+        <li role="none"><a href="index.html#contact" role="menuitem" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="article-hero">
+      <div class="article-hero-bg" style="background-image: url('images/article-industry.jpg');"></div>
+      <div class="article-hero-content">
+        <div class="container">
+          <span class="article-hero-tag">Industry</span>
+          <h1 class="article-hero-title">AI and the Future of Creative Design</h1>
+          <div class="article-hero-meta">
+            <span>June 5, 2026</span>
+            <span>&middot;</span>
+            <span>9 min read</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="article-body-page">
+      <div class="container">
+        <div class="article-body-content">
+          <p>Artificial intelligence has entered the design studio — and it's not leaving. From generating layout options in seconds to creating photorealistic mockups from text prompts, AI is fundamentally changing how design work gets done. But as the tools evolve, so must our understanding of what design actually is.</p>
+
+          <h2>What AI Can Do Now</h2>
+          <p>Today's AI tools can generate images, write copy, create color palettes, suggest layouts, and even produce entire brand identities from brief descriptions. Tools like Midjourney, DALL-E, and specialized design AI can produce visual work that, in many cases, is indistinguishable from human-created output.</p>
+          <p>For designers, this isn't a threat — it's an acceleration. AI excels at the generative phase of design: producing variations, exploring possibilities, and handling repetitive tasks. What used to take hours of iteration can now happen in minutes.</p>
+
+          <h2>What AI Cannot Do</h2>
+          <p>AI can generate, but it cannot understand. It can produce variations, but it cannot make judgments. It can mimic style, but it cannot develop strategy. The essential human elements of design — empathy, cultural awareness, ethical judgment, and the ability to translate abstract business goals into visual systems — remain firmly in human hands.</p>
+          <p>Great design has always been about more than aesthetics. It's about solving problems, building connections, and creating meaning. These require context, intuition, and the kind of deep understanding that comes from lived experience — qualities that no algorithm can replicate.</p>
+
+          <blockquote>
+            <p>"AI won't replace designers. Designers who use AI will replace those who don't."</p>
+          </blockquote>
+
+          <h2>The New Creative Workflow</h2>
+          <p>AI is reshaping the creative workflow, not replacing it. Here's how forward-thinking studios are integrating AI:</p>
+          <ul>
+            <li><strong>Research and analysis:</strong> AI can process audience data, competitive landscapes, and market trends at scale, providing insights that inform design strategy.</li>
+            <li><strong>Concept exploration:</strong> Use AI to generate dozens of visual directions in minutes, then apply human judgment to select and refine the most promising ones.</li>
+            <li><strong>Production acceleration:</strong> Automate repetitive tasks like resizing, file preparation, and asset generation, freeing designers for higher-level creative work.</li>
+            <li><strong>Content generation:</strong> Use AI for initial drafts of copy, image variations, and placeholder content, then refine with human craft and brand voice.</li>
+          </ul>
+
+          <h2>The Risk of Over-Reliance</h2>
+          <p>The danger isn't AI itself — it's the temptation to let AI do the thinking. When designers rely on AI-generated solutions without applying strategic reasoning, the result is work that looks generic and feels hollow. AI produces the average of what it's been trained on; great design requires transcending the average.</p>
+          <p>There's also the question of originality. AI-generated work is, by definition, derivative — it's a sophisticated remix of existing data. True innovation still requires human imagination, the ability to see connections that no training data has mapped.</p>
+
+          <h2>Designing for the AI Era</h2>
+          <p>The designers who will thrive in this new landscape are those who can think strategically, communicate clearly, and apply AI as a tool rather than a crutch. The fundamentals matter more than ever: understanding typography, composition, color theory, and user psychology.</p>
+          <p>AI is a powerful amplifier, but it amplifies what's already there. If the strategic foundation is weak, AI will produce weak results faster. If the creative vision is strong, AI will help execute it at unprecedented speed and scale.</p>
+
+          <h2>Looking Ahead</h2>
+          <p>The future of design isn't human versus machine — it's human with machine. The studios that embrace this partnership, maintaining creative excellence while leveraging AI's capabilities, will define the next era of visual culture. The tools are changing. The craft is not.</p>
+
+          <div class="article-nav">
+            <a href="article-typography-brand-voice.html">&larr; Previous Article</a>
+            <a href="index.html#articles">Back to Journal &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+            <span class="logo-text">Hydrolix</span>
+          </a>
+          <p class="footer-tagline">Art & Design Studio</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h3 class="footer-heading">Studio</h3>
+            <ul>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#articles">Journal</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Connect</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Dribbble</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Legal</h3>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="#">LLC Registration</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hydrolix LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

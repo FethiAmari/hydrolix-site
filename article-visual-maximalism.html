@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Return of Visual Maximalism in a Minimal World | Hydrolix</title>
+  <meta name="description" content="Why designers are embracing complexity, texture, and richness — and how to do it with intention rather than excess.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .article-hero { position: relative; height: 55vh; min-height: 350px; overflow: hidden; }
+    .article-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+    .article-hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,1) 0%, rgba(10,10,10,0.4) 50%, rgba(10,10,10,0.2) 100%); }
+    .article-hero-content { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: clamp(2rem, 5vw, 4rem); }
+    .article-hero .container { width: 100%; }
+    .article-hero-tag { display: inline-block; padding: 0.375rem 0.875rem; background: var(--accent); color: var(--bg); font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; border-radius: 100px; margin-bottom: 1.25rem; }
+    .article-hero-title { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 500; line-height: 1.15; max-width: 800px; margin-bottom: 1rem; }
+    .article-hero-meta { display: flex; align-items: center; gap: 1rem; color: var(--text-muted); font-size: 0.875rem; }
+    .article-hero-meta span { display: flex; align-items: center; gap: 0.375rem; }
+    .article-body-page { padding: clamp(3rem, 6vw, 5rem) 0 clamp(5rem, 10vw, 8rem); }
+    .article-body-content { max-width: 720px; }
+    .article-body-content p { color: var(--text-secondary); line-height: 1.85; margin-bottom: 1.5rem; font-size: 1.0625rem; }
+    .article-body-content h2 { font-family: var(--font-display); font-size: 1.625rem; font-weight: 500; margin: 3rem 0 1.25rem; color: var(--text); }
+    .article-body-content h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; margin: 2.5rem 0 1rem; color: var(--text); }
+    .article-body-content blockquote { border-left: 2px solid var(--accent); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; }
+    .article-body-content blockquote p { color: var(--text); font-family: var(--font-display); font-size: 1.25rem; line-height: 1.6; }
+    .article-body-content ul { color: var(--text-secondary); margin: 0.5rem 0 1.5rem 1.5rem; list-style: disc; }
+    .article-body-content li { margin-bottom: 0.5rem; line-height: 1.7; }
+    .article-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 3rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+    .article-nav a { font-size: 0.875rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem; transition: gap 0.3s var(--ease); }
+    .article-nav a:hover { gap: 0.75rem; }
+    @media (max-width: 768px) {
+      .article-hero { height: 45vh; min-height: 280px; }
+      .article-hero-title { font-size: clamp(1.75rem, 6vw, 2.5rem); }
+      .article-hero-meta { flex-wrap: wrap; gap: 0.5rem; }
+      .article-body-page { padding: clamp(2rem, 5vw, 3rem) 0 clamp(3rem, 8vw, 5rem); }
+      .article-body-content p { font-size: 1rem; }
+      .article-nav { flex-direction: column; gap: 1rem; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+        <span class="logo-text">Hydrolix</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-backdrop" id="navBackdrop"></div>
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="index.html#about" role="menuitem" class="nav-link">About</a></li>
+        <li role="none"><a href="index.html#services" role="menuitem" class="nav-link">Services</a></li>
+        <li role="none"><a href="index.html#work" role="menuitem" class="nav-link">Work</a></li>
+        <li role="none"><a href="index.html#articles" role="menuitem" class="nav-link">Journal</a></li>
+        <li role="none"><a href="index.html#contact" role="menuitem" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="article-hero">
+      <div class="article-hero-bg" style="background-image: url('images/article-featured.jpg');"></div>
+      <div class="article-hero-content">
+        <div class="container">
+          <span class="article-hero-tag">Featured</span>
+          <h1 class="article-hero-title">The Return of Visual Maximalism in a Minimal World</h1>
+          <div class="article-hero-meta">
+            <span>August 15, 2026</span>
+            <span>&middot;</span>
+            <span>8 min read</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="article-body-page">
+      <div class="container">
+        <div class="article-body-content">
+          <p>For the better part of a decade, minimalism dominated design. Clean lines, muted palettes, generous whitespace — these principles shaped everything from tech interfaces to luxury branding. But something has shifted. A quiet rebellion is underway, and visual maximalism is making a bold comeback.</p>
+
+          <h2>The Pendulum Swings</h2>
+          <p>Design trends, like culture itself, move in cycles. After years of stripping things down to their bare essentials, designers are rediscovering the power of abundance. Maximalism isn't about clutter or chaos — it's about richness, depth, and intentional complexity. It's the difference between a blank wall and a gallery installation.</p>
+          <p>This resurgence isn't happening in a vacuum. As our digital lives become increasingly sanitized by algorithmic feeds and template-driven platforms, there's a growing hunger for designs that feel handcrafted, layered, and alive. People crave visual experiences that reward attention rather than demanding simplicity.</p>
+
+          <h2>What Maximalism Actually Looks Like</h2>
+          <p>Modern maximalism borrows from art history, editorial design, and even fashion. Think overlapping typography, rich color palettes that shouldn't work together but do, textured backgrounds, ornamental borders, and compositions that invite the eye to wander. It's design that tells you: look closer, there's more to discover.</p>
+          <p>Brands like Gucci, Maximalist NYC, and a wave of independent studios are proving that more can indeed be more — when every element serves a purpose. The key distinction between maximalism and mere excess is intentionality. Every texture, every color, every layered element earns its place in the composition.</p>
+
+          <blockquote>
+            <p>"Maximalism is not about adding more. It's about making more of what matters."</p>
+          </blockquote>
+
+          <h2>How to Embrace Maximalism with Intention</h2>
+          <p>Here are principles for incorporating maximalist elements without losing coherence:</p>
+          <ul>
+            <li><strong>Create visual hierarchy:</strong> Even in maximalist compositions, the eye needs a path. Use scale, contrast, and placement to guide attention.</li>
+            <li><strong>Layer with purpose:</strong> Each layer should add meaning or emotion, not just visual noise. Ask: what does this element contribute?</li>
+            <li><strong>Anchor with a palette:</strong> Choose 3-5 core colors and let them repeat throughout the composition. This creates unity amid complexity.</li>
+            <li><strong>Embrace contrast:</strong> Pair ornate elements with moments of simplicity. The tension between the two creates visual interest.</li>
+            <li><strong>Tell a story:</strong> Maximalist design works best when there's a narrative thread connecting the elements. What story are you telling?</li>
+          </ul>
+
+          <h2>The Business Case for Going Big</h2>
+          <p>Maximalism isn't just aesthetically pleasing — it's strategically smart. In a landscape saturated with minimalist sameness, distinctive visual identities cut through the noise. Brands that embrace complexity signal confidence, creativity, and a willingness to stand apart from the crowd.</p>
+          <p>Studies in consumer psychology show that visually rich environments increase engagement time, emotional connection, and brand recall. When done well, maximalism doesn't overwhelm — it captivates.</p>
+
+          <h2>Looking Forward</h2>
+          <p>The return of visual maximalism represents something larger than a trend cycle. It reflects a cultural desire for authenticity, craft, and human expression in an increasingly automated world. For designers, this is an invitation to experiment, to layer, to create work that rewards curiosity.</p>
+          <p>The question isn't whether maximalism will define the next era of design. It's whether you'll be part of defining it.</p>
+
+          <div class="article-nav">
+            <a href="index.html#articles">&larr; Back to Journal</a>
+            <a href="article-color-psychology.html">Next Article &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+            <span class="logo-text">Hydrolix</span>
+          </a>
+          <p class="footer-tagline">Art & Design Studio</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h3 class="footer-heading">Studio</h3>
+            <ul>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#articles">Journal</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Connect</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Dribbble</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Legal</h3>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="#">LLC Registration</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hydrolix LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

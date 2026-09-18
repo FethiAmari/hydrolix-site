@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Psychology: Palettes That Convert | Hydrolix</title>
+  <meta name="description" content="How strategic color choices shape perception, emotion, and buyer behavior.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .article-hero { position: relative; height: 55vh; min-height: 350px; overflow: hidden; }
+    .article-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+    .article-hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,1) 0%, rgba(10,10,10,0.4) 50%, rgba(10,10,10,0.2) 100%); }
+    .article-hero-content { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: clamp(2rem, 5vw, 4rem); }
+    .article-hero .container { width: 100%; }
+    .article-hero-tag { display: inline-block; padding: 0.375rem 0.875rem; background: var(--accent); color: var(--bg); font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; border-radius: 100px; margin-bottom: 1.25rem; }
+    .article-hero-title { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 500; line-height: 1.15; max-width: 800px; margin-bottom: 1rem; }
+    .article-hero-meta { display: flex; align-items: center; gap: 1rem; color: var(--text-muted); font-size: 0.875rem; }
+    .article-body-page { padding: clamp(3rem, 6vw, 5rem) 0 clamp(5rem, 10vw, 8rem); }
+    .article-body-content { max-width: 720px; }
+    .article-body-content p { color: var(--text-secondary); line-height: 1.85; margin-bottom: 1.5rem; font-size: 1.0625rem; }
+    .article-body-content h2 { font-family: var(--font-display); font-size: 1.625rem; font-weight: 500; margin: 3rem 0 1.25rem; color: var(--text); }
+    .article-body-content blockquote { border-left: 2px solid var(--accent); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; }
+    .article-body-content blockquote p { color: var(--text); font-family: var(--font-display); font-size: 1.25rem; line-height: 1.6; }
+    .article-body-content ul { color: var(--text-secondary); margin: 0.5rem 0 1.5rem 1.5rem; list-style: disc; }
+    .article-body-content li { margin-bottom: 0.5rem; line-height: 1.7; }
+    .article-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 3rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+    .article-nav a { font-size: 0.875rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem; transition: gap 0.3s var(--ease); }
+    .article-nav a:hover { gap: 0.75rem; }
+    @media (max-width: 768px) {
+      .article-hero { height: 45vh; min-height: 280px; }
+      .article-hero-title { font-size: clamp(1.75rem, 6vw, 2.5rem); }
+      .article-hero-meta { flex-wrap: wrap; gap: 0.5rem; }
+      .article-body-page { padding: clamp(2rem, 5vw, 3rem) 0 clamp(3rem, 8vw, 5rem); }
+      .article-body-content p { font-size: 1rem; }
+      .article-nav { flex-direction: column; gap: 1rem; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+        <span class="logo-text">Hydrolix</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-backdrop" id="navBackdrop"></div>
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="index.html#about" role="menuitem" class="nav-link">About</a></li>
+        <li role="none"><a href="index.html#services" role="menuitem" class="nav-link">Services</a></li>
+        <li role="none"><a href="index.html#work" role="menuitem" class="nav-link">Work</a></li>
+        <li role="none"><a href="index.html#articles" role="menuitem" class="nav-link">Journal</a></li>
+        <li role="none"><a href="index.html#contact" role="menuitem" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="article-hero">
+      <div class="article-hero-bg" style="background-image: url('images/article-branding.jpg');"></div>
+      <div class="article-hero-content">
+        <div class="container">
+          <span class="article-hero-tag">Branding</span>
+          <h1 class="article-hero-title">Color Psychology: Palettes That Convert</h1>
+          <div class="article-hero-meta">
+            <span>July 28, 2026</span>
+            <span>&middot;</span>
+            <span>6 min read</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="article-body-page">
+      <div class="container">
+        <div class="article-body-content">
+          <p>Color is the first thing we process visually. Before a visitor reads your headline, scans your layout, or notices your logo, they've already formed an emotional response based on color alone. Understanding color psychology isn't just a design exercise — it's a business advantage.</p>
+
+          <h2>Why Color Matters More Than You Think</h2>
+          <p>Research in consumer psychology consistently shows that up to 90% of snap judgments about products are based on color alone. Color increases brand recognition by up to 80%, and it directly influences purchasing decisions, emotional associations, and perceived trustworthiness.</p>
+          <p>The science is clear: color isn't decoration. It's communication. Every hue carries psychological weight, cultural associations, and emotional triggers that shape how people experience your brand.</p>
+
+          <h2>The Psychology of Key Colors</h2>
+          <p><strong>Red:</strong> Energy, urgency, passion. Red increases heart rate and creates excitement. It's why clearance sales, food brands, and entertainment companies gravitate toward it. Use it when you want to drive immediate action.</p>
+          <p><strong>Blue:</strong> Trust, stability, professionalism. Blue is the most universally liked color across cultures. It's the dominant color in finance, healthcare, and technology because it signals reliability and competence.</p>
+          <p><strong>Yellow:</strong> Optimism, warmth, attention. Yellow is the most visible color in daylight, making it ideal for highlighting key elements. It works as an accent but can overwhelm when used as a dominant color.</p>
+          <p><strong>Green:</strong> Growth, health, harmony. Green bridges the gap between natural and modern. It's effective for sustainability-focused brands, wellness companies, and financial services (representing wealth).</p>
+          <p><strong>Purple:</strong> Luxury, creativity, wisdom. Purple has historically been associated with royalty and exclusivity. It works well for premium brands, creative agencies, and products that want to signal sophistication.</p>
+          <p><strong>Orange:</strong> Confidence, friendliness, action. Orange combines red's energy with yellow's warmth. It's approachable and enthusiastic — perfect for calls-to-action and brands that want to appear accessible.</p>
+
+          <blockquote>
+            <p>"Color is a power which directly influences the soul." — Wassily Kandinsky</p>
+          </blockquote>
+
+          <h2>Building a Palette That Converts</h2>
+          <p>A strategic color palette isn't about picking your favorite colors. It's about aligning emotional triggers with business goals. Here's our framework:</p>
+          <ul>
+            <li><strong>Primary color:</strong> Your brand's dominant hue. Choose based on the core emotion you want to evoke.</li>
+            <li><strong>Secondary color:</strong> Complements the primary and adds versatility. Should create enough contrast for readability.</li>
+            <li><strong>Accent color:</strong> Reserved for CTAs and key interactions. Should stand out from both primary and secondary.</li>
+            <li><strong>Neutral palette:</strong> Backgrounds, text, and supporting elements. These do the heavy lifting of readability and breathing room.</li>
+          </ul>
+
+          <h2>Common Mistakes</h2>
+          <p>The biggest mistake in color selection is choosing based on personal preference rather than audience perception. Your favorite color might mean something entirely different to your target market. Always test with real users.</p>
+          <p>Another pitfall is using too many colors. A palette with more than 4-5 hues quickly becomes chaotic. Restraint is what separates professional brand palettes from amateur ones.</p>
+
+          <h2>Putting It Into Practice</h2>
+          <p>Start with your brand's core values and audience. Map those to emotional triggers, then to specific colors. Build your palette from there, testing along the way. Remember: color psychology provides a starting point, not a rigid rulebook. Context, culture, and audience always matter.</p>
+          <p>The best palettes don't just look good — they feel right. And when something feels right, conversion follows.</p>
+
+          <div class="article-nav">
+            <a href="article-visual-maximalism.html">&larr; Previous Article</a>
+            <a href="article-brief-to-brilliance.html">Next Article &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Hydrolix home">
+            <span class="logo-text">Hydrolix</span>
+          </a>
+          <p class="footer-tagline">Art & Design Studio</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h3 class="footer-heading">Studio</h3>
+            <ul>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#articles">Journal</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Connect</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Dribbble</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Legal</h3>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="#">LLC Registration</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hydrolix LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
