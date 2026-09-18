@@ -1106,7 +1106,7 @@ input, textarea { font: inherit; }
 
 /* --- Card Body --- */
 .article-body {
-  padding: 1.25rem 1.5rem 1.5rem;
+  padding: 1.5rem 1.75rem 1.75rem;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -1117,7 +1117,7 @@ input, textarea { font: inherit; }
   text-transform: uppercase;
   letter-spacing: 0.08em;
   display: block;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.875rem;
 }
 .article-title {
   font-family: var(--font-display);
@@ -1125,7 +1125,7 @@ input, textarea { font: inherit; }
   font-weight: 500;
   line-height: 1.35;
   letter-spacing: -0.01em;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.875rem;
   transition: color 0.3s var(--ease);
 }
 .article-card:hover .article-title {
@@ -1135,7 +1135,7 @@ input, textarea { font: inherit; }
   font-size: 0.875rem;
   color: var(--text-secondary);
   line-height: 1.65;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -1150,7 +1150,7 @@ input, textarea { font: inherit; }
   color: var(--accent);
   transition: gap 0.3s var(--ease), opacity 0.3s;
   margin-top: auto;
-  padding-top: 1rem;
+  padding-top: 1.25rem;
 }
 .article-link svg {
   transition: transform 0.3s var(--ease);
@@ -1479,7 +1479,11 @@ a.contact-link:hover .contact-link-value {
 .article-tags {
   display: flex;
   gap: 0.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.25rem;
+}
+.article-tags .article-tag {
+  position: static;
 }
 .article-hero-title {
   font-family: var(--font-display);
@@ -1621,7 +1625,7 @@ a.contact-link:hover .contact-link-value {
     order: 2;
   }
   .testimonials-track {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .contact-layout {
     grid-template-columns: 1fr;
@@ -1632,7 +1636,11 @@ a.contact-link:hover .contact-link-value {
     gap: 3rem;
   }
   .hero-floating-stats {
-    right: 2rem;
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 2rem;
+    justify-content: center;
   }
 }
 
@@ -1739,6 +1747,10 @@ a.contact-link:hover .contact-link-value {
     grid-template-columns: 1fr;
   }
 
+  .testimonials-track {
+    grid-template-columns: 1fr;
+  }
+
   .contact-form {
     padding: 1.5rem;
   }
@@ -1748,6 +1760,7 @@ a.contact-link:hover .contact-link-value {
   }
   .footer-cols {
     grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
   }
 
   .article-hero {
@@ -1808,8 +1821,14 @@ a.contact-link:hover .contact-link-value {
   .services-header {
     margin-bottom: 2.5rem;
   }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
   .section-title {
     font-size: clamp(1.75rem, 5vw, 2.5rem);
+  }
+  .work-grid {
+    gap: 1rem;
   }
   .footer-cols {
     grid-template-columns: 1fr;
