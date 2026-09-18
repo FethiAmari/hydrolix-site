@@ -250,25 +250,27 @@
 
     <!-- Articles -->
     <section class="articles" id="articles" aria-labelledby="articles-heading">
+      <div class="articles-noise"></div>
       <div class="container">
         <div class="articles-header" data-reveal>
           <span class="section-label">Journal</span>
           <h2 id="articles-heading" class="section-title">Engineering insights</h2>
+          <p class="articles-subtitle">Deep dives into hydraulic systems, CAD workflows, digital twins, and the technologies shaping modern industry.</p>
         </div>
         <div class="articles-grid">
-          <article class="article-card article-featured" data-reveal>
-            <div class="article-image" style="background-image: url('images/article-hydraulics.jpg'); background-size: cover; background-position: center;">
+          <article class="article-card article-card-hero" data-reveal>
+            <div class="article-hero-image" style="background-image: url('images/article-hydraulics.jpg');">
               <span class="article-tag">Hydraulics</span>
             </div>
-            <div class="article-body">
+            <div class="article-hero-body">
               <time class="article-date" datetime="2026-09-10">September 10, 2026</time>
               <h3 class="article-title">Mastering Precision: The Fundamentals of Modern Hydraulic System Design</h3>
               <p class="article-excerpt">Explore the core principles behind efficient hydraulic circuits, power units, and fluid power systems that drive industrial performance.</p>
               <a href="article-hydraulics.html" class="article-link">Read Article <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             </div>
           </article>
-          <article class="article-card" data-reveal>
-            <div class="article-image" style="background-image: url('images/article-cad.jpg'); background-size: cover; background-position: center;">
+          <article class="article-card" data-reveal data-reveal-delay="100">
+            <div class="article-image" style="background-image: url('images/article-cad.jpg');">
               <span class="article-tag">CAD</span>
             </div>
             <div class="article-body">
@@ -278,8 +280,8 @@
               <a href="article-cad.html" class="article-link">Read Article <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             </div>
           </article>
-          <article class="article-card" data-reveal>
-            <div class="article-image" style="background-image: url('images/article-3d.jpg'); background-size: cover; background-position: center;">
+          <article class="article-card" data-reveal data-reveal-delay="200">
+            <div class="article-image" style="background-image: url('images/article-3d.jpg');">
               <span class="article-tag">3D Modeling</span>
             </div>
             <div class="article-body">
@@ -289,8 +291,8 @@
               <a href="article-3d-modeling.html" class="article-link">Read Article <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             </div>
           </article>
-          <article class="article-card" data-reveal>
-            <div class="article-image" style="background-image: url('images/article-web.jpg'); background-size: cover; background-position: center;">
+          <article class="article-card" data-reveal data-reveal-delay="300">
+            <div class="article-image" style="background-image: url('images/article-web.jpg');">
               <span class="article-tag">Web Dev</span>
             </div>
             <div class="article-body">
@@ -300,17 +302,20 @@
               <a href="article-web.html" class="article-link">Read Article <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             </div>
           </article>
-          <article class="article-card" data-reveal>
-            <div class="article-image" style="background-image: url('images/article-mobile.jpg'); background-size: cover; background-position: center;">
+          <article class="article-card article-card-featured" data-reveal data-reveal-delay="400">
+            <div class="article-hero-image" style="background-image: url('images/article-mobile.jpg');">
               <span class="article-tag">Mobile</span>
             </div>
-            <div class="article-body">
+            <div class="article-hero-body">
               <time class="article-date" datetime="2026-07-01">July 1, 2026</time>
               <h3 class="article-title">Empowering Mobility: Custom Mobile App Development for Industrial Assets</h3>
               <p class="article-excerpt">Native and cross-platform mobile solutions that put industrial control and monitoring in the palm of your hand.</p>
               <a href="article-mobile.html" class="article-link">Read Article <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             </div>
           </article>
+        </div>
+        <div class="articles-footer" data-reveal>
+          <a href="#" class="btn btn-ghost articles-cta">View All Articles <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </div>
     </section>
@@ -380,6 +385,10 @@
                 <span class="contact-link-label">Studio</span>
                 <span class="contact-link-value">8206 Louisiana Blvd NE, Ste A #10524<br>Albuquerque, NM 87113</span>
               </div>
+              <a href="https://www.linkedin.com/in/hydrolix-solutions-llc-85013b436?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">Hydrolix Solutions LLC</span>
+              </a>
             </div>
           </div>
           <div class="contact-right" data-reveal>
@@ -444,10 +453,8 @@
           <div class="footer-col">
             <h3 class="footer-heading">Connect</h3>
             <ul>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Dribbble</a></li>
-              <li><a href="#">Behance</a></li>
-              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="https://www.linkedin.com/in/hydrolix-solutions-llc-85013b436?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
           </div>
           <div class="footer-col">

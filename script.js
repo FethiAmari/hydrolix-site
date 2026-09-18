@@ -129,7 +129,8 @@
     }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 
     els.forEach(function (el, i) {
-      el.style.transitionDelay = (i % 4) * 0.08 + 's';
+      var delay = el.getAttribute('data-reveal-delay');
+      el.style.transitionDelay = delay ? (parseInt(delay, 10) + 'ms') : ((i % 4) * 0.08 + 's');
       observer.observe(el);
     });
   }
