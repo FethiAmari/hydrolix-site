@@ -16,6 +16,7 @@
     setTimeout(function () {
       loader.classList.add('hidden');
       document.body.style.overflow = '';
+      revealHero();
       initReveal();
     }, 500);
   }
@@ -115,6 +116,32 @@
       }
     });
   });
+
+  // --- Hero reveal (staggered entrance) ---
+  function revealHero() {
+    var hero = document.querySelector('.hero');
+    if (!hero) return;
+    setTimeout(function () {
+      hero.classList.add('revealed');
+    }, 400);
+
+    // Parallax scroll: fade + lift hero content on scroll
+    var content = document.querySelector('.hero-content');
+    var heroH = hero.offsetHeight;
+
+    function onScroll() {
+      var scrollY = window.pageYOffset;
+      if (scrollY >= heroH) return;
+      var pct = scrollY / heroH;
+      var translateY = pct * 80;
+      var opacity = Math.max(0, 1 - pct * 1.5);
+      if (content) {
+        content.style.transform = 'translateY(' + translateY + 'px)';
+        content.style.opacity = opacity;
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
 
   // --- Reveal on scroll ---
   function initReveal() {
